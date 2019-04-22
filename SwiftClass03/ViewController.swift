@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Label Component
+    @IBOutlet weak var label_Setting: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
-
-
+    
+    //button Click Event
+    @IBAction func button_Push(_ sender: UIButton){
+        label_Setting.text = "Hi,Human."
+    }
 }
-
